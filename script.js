@@ -1,7 +1,9 @@
-let app = 23
-var apps = 34
-function appd() {
-  console.log(apps)
+function x() {
+  let a = 34
+  function b() {
+    console.log(a)
+  }
+  return b
 }
 
-appd()
+x()()
